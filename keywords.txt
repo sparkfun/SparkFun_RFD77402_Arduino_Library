@@ -12,31 +12,31 @@ RFD77402 KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
-begin			KEYWORD2
+begin					KEYWORD2
 
 takeMeasurement			KEYWORD2
-getDistance			KEYWORD2
+getDistance				KEYWORD2
 getValidPixels			KEYWORD2
-getConfidenceValue			KEYWORD2
-getMode			KEYWORD2
+getConfidenceValue		KEYWORD2
+getMode					KEYWORD2
 
 goToStandbyMode			KEYWORD2
-goToOffMode			KEYWORD2
-goToOnMode			KEYWORD2
-goToMeasurementMode			KEYWORD2
+goToOffMode				KEYWORD2
+goToOnMode				KEYWORD2
+goToMeasurementMode		KEYWORD2
 	
-getPeak			KEYWORD2
-setPeak			KEYWORD2
+getPeak					KEYWORD2
+setPeak					KEYWORD2
 getThreshold			KEYWORD2
 setThreshold			KEYWORD2
 getFrequency			KEYWORD2
 setFrequency			KEYWORD2
 
-getMailbox			KEYWORD2
-reset			KEYWORD2
-getChipID			KEYWORD2
+getMailbox				KEYWORD2
+reset					KEYWORD2
+getChipID				KEYWORD2
 
-getCalibrationData			KEYWORD2
+getCalibrationData		KEYWORD2
 
 readRegister16			KEYWORD2
 readRegister			KEYWORD2
