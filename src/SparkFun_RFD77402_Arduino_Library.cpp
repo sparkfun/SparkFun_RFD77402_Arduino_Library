@@ -46,8 +46,24 @@ boolean RFD77402::begin(TwoWire &wirePort, uint32_t i2cSpeed)
 
   //Drive INT_PAD high
   uint8_t setting = readRegister(RFD77402_ICSR);
-  setting |= (1 << 2); //Set the bit
+  //Serial.print("INT STAT reg settings:");
+  //Serial.println(setting);
+  //setting |= (1 << 2); //Set the bit
+  setting = 5;
   writeRegister(RFD77402_ICSR, setting);
+  //setting = readRegister(RFD77402_ICSR);
+  //Serial.print("INT STAT reg settings:");
+  //Serial.println(setting);
+  //Enable INT
+  setting = readRegister(RFD77402_INTERRUPTS);
+  //Serial.print("INT EN reg settings:");
+  //Serial.println(setting);
+  //setting |= (15 << 0); //Set the bit
+  setting = 15; //Set the bit
+  writeRegister(RFD77402_INTERRUPTS, setting);
+  //setting = readRegister(RFD77402_INTERRUPTS);
+  //Serial.print("INT EN reg settings:");
+  //Serial.println(setting);
 
   //Configure I2C Interface
   writeRegister(RFD77402_CONFIGURE_I2C, 0x65); //0b.0110.0101 = Address increment, auto increment, host debug, MCPU debug
