@@ -72,6 +72,18 @@
 #define I2C_SPEED_STANDARD        100000
 #define I2C_SPEED_FAST            400000
 
+#define INT_CLR_REG 1 //tells which register read clears the interrupt (Default: 1, Result Register)
+#define INT_CLR 0 << 1 //tells whether or not to clear when register is read (Default: 0, cleared upon register read)
+#define INT_PIN_TYPE 1 << 2 //tells whether int is push-pull or open drain (Default: 1, push-pull)
+#define INT_LOHI 0 << 3 //tells whether the interrupt is active low or high (Default: 0, active low)
+
+//Setting any of the following bits to 1 enables an interrupt when that event occurs
+#define INTSRC_DATA 1 //Interrupt fires with newly available data
+#define INTSRC_M2H 0 << 1//Interrupt fires with newly available data in M2H mailbox register
+#define INTSRC_H2M 0 << 2//Interrupt fires when H2M register is read
+#define INTSRC_RST 0 << 3 //Interrupt fires when HW reset occurs
+
+
 class RFD77402 {
   public:
 
