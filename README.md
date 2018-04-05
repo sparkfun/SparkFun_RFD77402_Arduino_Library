@@ -21,7 +21,7 @@ Documentation
 --------------
 
 * **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
-* **[Product Repository](https://github.com/sparkfunx/Qwiic_Distance_Sensor-RFD77402)** - Main repository (including hardware files) for the Qwiic Distance RFD77402 breakout board.
+* **[Product Repository](https://github.com/sparkfun/Qwiic_Distance_RFD77402)** - Main repository (including hardware files) for the Qwiic Distance RFD77402 breakout board.
 
 Product Versions
 ----------------
